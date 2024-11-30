@@ -1,0 +1,14 @@
+.mobile-menu div {
+  width: 32px;
+  height: 1px;
+  background-color: black;
+  margin: 3px 0;
+}
+
+.custom-color-1 {
+  color: #53585f;
+}
+
+.custom-bg-color-1 {
+  background-color: #cbd5e180;
+}

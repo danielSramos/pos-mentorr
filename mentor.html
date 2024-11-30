@@ -1,0 +1,554 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mentorr</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="css/custom.css">
+</head>
+
+<body>
+
+    <header class="px-4 sm:px-8">
+        <!--row 1-->
+        <div
+            class="container mx-auto flex flex-col sm:flex-row py-4 sm:py-0 gap-4 sm:gap-0 justify-between items-center sm:h-24">
+            <div>
+                <img src="img/logo-mentorr.svg" alt="logotipo Mentorr">
+            </div>
+            <div class="flex gap-2 sm:gap-6 items-center">
+                <div class="flex items-center gap-1 sm:gap-2">
+                    <a href="/" class="text-sm sm:text-base">For Business</a>
+                    <svg class="w-4 sm:w-5" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                        stroke-width="1.5" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="m19.5 8.25-7.5 7.5-7.5-7.5" />
+                    </svg>
+                </div>
+
+                <button
+                    class="bg-blue-600 text-white px-6 sm:px-8 py-2 sm:py-3 text-sm sm:text-base font-semibold rounded-lg">Quero
+                    ser Mentorr</button>
+                <a href="login.html" class="text-sm sm:text-base">Login</a>
+            </div>
+        </div>
+        <!-- end row 1-->
+
+        <!-- row 2-->
+        <div class="md:border h-14 flex items-center">
+            <div class="container mx-auto">
+                <nav class="hidden md:block">
+                    <ul class="flex sm:items-center sm:gap-5 justify-between text-sm sm:text-base">
+                        <li>
+                            <a href="/">UX/UI</a>
+                        </li>
+                        <li>
+                            <a href="/">Front-end</a>
+                        </li>
+                        <li>
+                            <a href="/">Back-end</a>
+                        </li>
+                        <li>
+                            <a href="/">DevOps</a>
+                        </li>
+                        <li>
+                            <a href="/">Agile</a>
+                        </li>
+                        <li>
+                            <a href="/">Cloud Computing</a>
+                        </li>
+                        <li>
+                            <a href="/">Inteligência Artificial</a>
+                        </li>
+                        <li>
+                            <a href="/">Segurança da Informação</a>
+                        </li>
+                    </ul>
+                </nav>
+
+                <div class="mobile-menu w-6 mx-auto flex flex-col justify-center md:hidden">
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                </div>
+            </div>
+        </div>
+        <!-- end row 2-->
+    </header>
+
+    <div class="container mx-auto flex flex-wrap lg:flex-nowrap w-full min-h-screen px-4">
+        <div class="flex flex-col my-5 w-full md:hidden">
+            <button type="button"
+                class="bg-blue-600 text-white font-semibold text-md rounded-lg h-10 mx-24 ">Filtros</button>
+        </div>
+
+        <section class="w-full sm:w-1/3 pr-0 sm:pr-10 hidden md:block">
+            <div class="relative w-full max-w-full lg:max-w-md mt-10">
+                <input type="text" placeholder="Busque por habilidades"
+                    class="w-full pl-4 pr-12 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500" />
+                <span class="absolute inset-y-0 right-3 flex items-center">
+                    <img src="img/lupa.svg" alt="img-input-search">
+                </span>
+            </div>
+
+            <div class="flex flex-col mt-20 gap-8">
+                <div class="relative w-full max-w-md">
+                    <label for="" class="font-semibold custom-color-1 text-sm">Área de conhecimento</label>
+                    <input type="text"
+                        class="w-full pl-4 pr-12 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 mt-2" />
+                    <span class="absolute inset-y-0 right-3 top-5 flex items-center">
+                        <img src="img/lupa.svg" alt="img-input-search">
+                    </span>
+                </div>
+                <div class="space-y-6 ">
+                    <label class="flex items-center space-x-2">
+                        <input type="checkbox"
+                            class="h-5 w-5 appearance-none rounded border-2 border-slate-300 checked:bg-blue-600 checked:border-blue-600 enabled:hover:border-gray-400 checked:enabled:hover:border-blue-600">
+                        <span>Produto</span>
+                    </label>
+                    <label class="flex items-center space-x-2">
+                        <input type="checkbox"
+                            class="h-5 w-5 appearance-none rounded border-2 border-slate-300 checked:bg-blue-600 checked:border-blue-600 enabled:hover:border-gray-400 checked:enabled:hover:border-blue-600">
+                        <span>UX/UI</span>
+                    </label>
+                    <label class="flex items-center space-x-2">
+                        <input type="checkbox"
+                            class="h-5 w-5 appearance-none rounded border-2 border-slate-300 checked:bg-blue-600 checked:border-blue-600 enabled:hover:border-gray-400 checked:enabled:hover:border-blue-600">
+                        <span>Web</span>
+                    </label>
+                    <label class="flex items-center space-x-2">
+                        <input type="checkbox"
+                            class="h-5 w-5 appearance-none rounded border-2 border-slate-300 checked:bg-blue-600 checked:border-blue-600 enabled:hover:border-gray-400 checked:enabled:hover:border-blue-600">
+                        <span>Startup</span>
+                    </label>
+                    <label class="flex items-center space-x-2">
+                        <input type="checkbox"
+                            class="h-5 w-5 appearance-none rounded border-2 border-slate-300 checked:bg-blue-600 checked:border-blue-600 enabled:hover:border-gray-400 checked:enabled:hover:border-blue-600">
+                        <span>Gestão e Negócios</span>
+                    </label>
+                    <label class="flex items-center space-x-2">
+                        <input type="checkbox"
+                            class="h-5 w-5 appearance-none rounded border-2 border-slate-300 checked:bg-blue-600 checked:border-blue-600 enabled:hover:border-gray-400 checked:enabled:hover:border-blue-600">
+                        <span>Finanças</span>
+                    </label>
+                    <label class="flex items-center space-x-2">
+                        <input type="checkbox"
+                            class="h-5 w-5 appearance-none rounded border-2 border-slate-300 checked:bg-blue-600 checked:border-blue-600 enabled:hover:border-gray-400 checked:enabled:hover:border-blue-600">
+                        <span>Tecnologias</span>
+                    </label>
+                </div>
+            </div>
+
+            <div class="flex flex-col mt-20 gap-8">
+                <div class="relative w-full max-w-md">
+                    <label for="" class="font-semibold custom-color-1 text-sm">Cargo</label>
+                    <input type="text"
+                        class="w-full pl-4 pr-12 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 mt-2" />
+                    <span class="absolute inset-y-0 right-3 top-5 flex items-center">
+                        <img src="img/lupa.svg" alt="img-input-search">
+                    </span>
+                </div>
+                <div class="space-y-6 ">
+                    <label class="flex items-center space-x-2">
+                        <input type="checkbox"
+                            class="h-5 w-5 appearance-none rounded border-2 border-slate-300 checked:bg-blue-600 checked:border-blue-600 enabled:hover:border-gray-400 checked:enabled:hover:border-blue-600">
+                        <span>CEO</span>
+                    </label>
+                    <label class="flex items-center space-x-2">
+                        <input type="checkbox"
+                            class="h-5 w-5 appearance-none rounded border-2 border-slate-300 checked:bg-blue-600 checked:border-blue-600 enabled:hover:border-gray-400 checked:enabled:hover:border-blue-600">
+                        <span>CTO</span>
+                    </label>
+                    <label class="flex items-center space-x-2">
+                        <input type="checkbox"
+                            class="h-5 w-5 appearance-none rounded border-2 border-slate-300 checked:bg-blue-600 checked:border-blue-600 enabled:hover:border-gray-400 checked:enabled:hover:border-blue-600">
+                        <span>Sênior</span>
+                    </label>
+                    <label class="flex items-center space-x-2">
+                        <input type="checkbox"
+                            class="h-5 w-5 appearance-none rounded border-2 border-slate-300 checked:bg-blue-600 checked:border-blue-600 enabled:hover:border-gray-400 checked:enabled:hover:border-blue-600">
+                        <span>Pleno</span>
+                    </label>
+                    <label class="flex items-center space-x-2">
+                        <input type="checkbox"
+                            class="h-5 w-5 appearance-none rounded border-2 border-slate-300 checked:bg-blue-600 checked:border-blue-600 enabled:hover:border-gray-400 checked:enabled:hover:border-blue-600">
+                        <span>Consultor</span>
+                    </label>
+                    <label class="flex items-center space-x-2">
+                        <input type="checkbox"
+                            class="h-5 w-5 appearance-none rounded border-2 border-slate-300 checked:bg-blue-600 checked:border-blue-600 enabled:hover:border-gray-400 checked:enabled:hover:border-blue-600">
+                        <span>Professor</span>
+                    </label>
+                </div>
+            </div>
+
+            <div class="flex flex-col mt-20 gap-8">
+                <div class="relative w-full max-w-md">
+                    <label for="" class="font-semibold custom-color-1 text-sm">Empresas</label>
+                    <input type="text"
+                        class="w-full pl-4 pr-12 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 mt-2" />
+                    <span class="absolute inset-y-0 right-3 top-5 flex items-center">
+                        <img src="img/lupa.svg" alt="img-input-search">
+                    </span>
+                </div>
+                <div class="space-y-6 ">
+                    <label class="flex items-center space-x-2">
+                        <input type="checkbox"
+                            class="h-5 w-5 appearance-none rounded border-2 border-slate-300 checked:bg-blue-600 checked:border-blue-600 enabled:hover:border-gray-400 checked:enabled:hover:border-blue-600">
+                        <span>Google</span>
+                    </label>
+                    <label class="flex items-center space-x-2">
+                        <input type="checkbox"
+                            class="h-5 w-5 appearance-none rounded border-2 border-slate-300 checked:bg-blue-600 checked:border-blue-600 enabled:hover:border-gray-400 checked:enabled:hover:border-blue-600">
+                        <span>Amazon</span>
+                    </label>
+                    <label class="flex items-center space-x-2">
+                        <input type="checkbox"
+                            class="h-5 w-5 appearance-none rounded border-2 border-slate-300 checked:bg-blue-600 checked:border-blue-600 enabled:hover:border-gray-400 checked:enabled:hover:border-blue-600">
+                        <span>Mercado Livre</span>
+                    </label>
+                    <label class="flex items-center space-x-2">
+                        <input type="checkbox"
+                            class="h-5 w-5 appearance-none rounded border-2 border-slate-300 checked:bg-blue-600 checked:border-blue-600 enabled:hover:border-gray-400 checked:enabled:hover:border-blue-600">
+                        <span>Instagram</span>
+                    </label>
+                    <label class="flex items-center space-x-2">
+                        <input type="checkbox"
+                            class="h-5 w-5 appearance-none rounded border-2 border-slate-300 checked:bg-blue-600 checked:border-blue-600 enabled:hover:border-gray-400 checked:enabled:hover:border-blue-600">
+                        <span>Delta Piscinas</span>
+                    </label>
+                    <label class="flex items-center space-x-2">
+                        <input type="checkbox"
+                            class="h-5 w-5 appearance-none rounded border-2 border-slate-300 checked:bg-blue-600 checked:border-blue-600 enabled:hover:border-gray-400 checked:enabled:hover:border-blue-600">
+                        <span>UniFAP</span>
+                    </label>
+                </div>
+            </div>
+        </section>
+
+        <section class="w-full md:w-2/3 my-10">
+            <div class="flex flex-col lg:flex-row lg:gap-8 border border-slate-300 rounded-lg px-10">
+                <div class="flex w-full lg:w-1/5 h-full justify-center">
+                    <figure class="mt-10"><img src="img/johnPS.png" alt="mentor-img"></figure>
+                </div>
+                <div class="w-full lg:w-4/5 h-full mt-10">
+                    <div class="flex items-center justify-center lg:justify-start gap-2">
+                        <h1 class="text-2xl font-bold text-slate-900">John P. Santos</h1>
+                        <figure><img src="img/checked-icon.svg" alt="icon-verified"></figure>
+                    </div>
+                    <h2 class="flex justify-center lg:justify-start font-semibold custom-color-1 my-2">Cientista de
+                        Dados Sênior na Amazon</h2>
+                    <figure class="flex justify-center lg:justify-start"><img src="img/stars.svg" alt="stars-icon">
+                    </figure>
+                    <div class="mt-6 text-xl custom-color-1">
+                        <p class="text-justify text-sm md:text-xl">
+                            Sou John P. Santos, cientista de dados sênior na Amazon com mais de oito anos de experiência
+                            em machine learning e análise preditiva.
+                            Ao longo da minha trajetória, tenho me dedicado a transformar dados em estratégias que
+                            impactam diretamente a experiência dos clientes
+                            e os resultados da empresa. Com mestrado em Ciência da Computação e especialização em IA,
+                            meu foco é sempre resolver problemas complexos
+                            de forma criativa e eficiente. Tenho orgulho de liderar e orientar equipes talentosas,
+                            cultivando um ambiente de inovação e precisão analítica
+                            em todos os projetos em que atuo.
+                        </p>
+                    </div>
+                    <div class="flex flex-wrap gap-1 items-center justify-between my-6">
+                        <span
+                            class="flex justify-center items-center p-3 h-5 custom-bg-color-1 text-black font-bold rounded-xl text-sm">infraestrutura</span>
+                        <span
+                            class="flex justify-center items-center p-3 h-5 custom-bg-color-1 text-black font-bold rounded-xl text-sm">tecnologia</span>
+                        <span
+                            class="flex justify-center items-center p-3 h-5 custom-bg-color-1 text-black font-bold rounded-xl text-sm">design
+                            e ux</span>
+                        <span
+                            class="flex justify-center items-center p-3 h-5 custom-bg-color-1 text-black font-bold rounded-xl text-sm">infraestrutura</span>
+                        <span
+                            class="flex justify-center items-center p-3 h-5 custom-bg-color-1 text-black font-bold rounded-xl text-sm">gestão</span>
+                        <span
+                            class="flex justify-center items-center p-3 h-5 custom-bg-color-1 text-black font-bold rounded-xl text-sm">negócios</span>
+                        <span
+                            class="flex justify-center items-center p-3 h-5 custom-bg-color-1 text-black font-bold rounded-xl text-sm">infraestrutura</span>
+                        <span
+                            class="flex justify-center items-center p-3 h-5 custom-bg-color-1 text-black font-bold rounded-xl text-sm">startups</span>
+                        <span
+                            class="flex justify-center items-center p-3 h-5 custom-bg-color-1 text-black font-bold rounded-xl text-sm">financeiro</span>
+                        <span
+                            class="flex justify-center items-center p-3 h-5 custom-bg-color-1 text-black font-bold rounded-xl text-sm">tecnologia</span>
+                        <span
+                            class="flex justify-center items-center p-3 h-5 custom-bg-color-1 text-black font-bold rounded-xl text-sm">design
+                            e ux</span>
+                        <span
+                            class="flex justify-center items-center p-3 h-5 custom-bg-color-1 text-black font-bold rounded-xl text-sm">gestão</span>
+                        <span
+                            class="flex justify-center items-center p-3 h-5 custom-bg-color-1 text-black font-bold rounded-xl text-sm">negócios</span>
+                        <span
+                            class="flex justify-center items-center p-3 h-5 custom-bg-color-1 text-black font-bold rounded-xl text-sm">startups</span>
+                        <span
+                            class="flex justify-center items-center p-3 h-5 custom-bg-color-1 text-black font-bold rounded-xl text-sm">financeiro</span>
+                    </div>
+                    <div class="flex flex-col lg:flex-row w-full lg:justify-between my-10">
+                        <div class="flex items-center justify-center">
+                            <figure class="mr-3"><img src="img/cifrao-icon.svg" alt="dolar-icon"></figure>
+                            <span class="text-3xl font-bold">R$ 800,00</span>
+                            <span class="text-sm md:text-base pt-2 font-bold">/mês</span>
+                        </div>
+                        <div class="flex justify-center lg:my-0 my-5">
+                            <button type="button"
+                                class="bg-blue-600 text-white font-bold rounded-lg px-10 h-10 md:h-12 hover:bg-blue-700 focus:ring focus:ring-blue-500">Ver
+                                perfil completo</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="flex flex-col lg:flex-row lg:gap-8 border border-slate-300 rounded-lg px-10 mt-10">
+                <div class="flex w-full lg:w-1/5 h-full justify-center">
+                    <figure class="mt-10"><img src="img/johnPS.png" alt="mentor-img"></figure>
+                </div>
+                <div class="w-full lg:w-4/5 h-full mt-10">
+                    <div class="flex items-center justify-center lg:justify-start gap-2">
+                        <h1 class="text-2xl font-bold text-slate-900">John P. Santos</h1>
+                        <figure><img src="img/checked-icon.svg" alt="icon-verified"></figure>
+                    </div>
+                    <h2 class="flex justify-center lg:justify-start font-semibold custom-color-1 my-2">Cientista de
+                        Dados Sênior na Amazon</h2>
+                    <figure class="flex justify-center lg:justify-start"><img src="img/stars.svg" alt="stars-icon">
+                    </figure>
+                    <div class="mt-6 text-xl custom-color-1">
+                        <p class="text-justify text-sm md:text-xl">
+                            Sou John P. Santos, cientista de dados sênior na Amazon com mais de oito anos de experiência
+                            em machine learning e análise preditiva.
+                            Ao longo da minha trajetória, tenho me dedicado a transformar dados em estratégias que
+                            impactam diretamente a experiência dos clientes
+                            e os resultados da empresa. Com mestrado em Ciência da Computação e especialização em IA,
+                            meu foco é sempre resolver problemas complexos
+                            de forma criativa e eficiente. Tenho orgulho de liderar e orientar equipes talentosas,
+                            cultivando um ambiente de inovação e precisão analítica
+                            em todos os projetos em que atuo.
+                        </p>
+                    </div>
+                    <div class="flex flex-wrap gap-1 items-center justify-between my-6">
+                        <span
+                            class="flex justify-center items-center p-3 h-5 custom-bg-color-1 text-black font-bold rounded-xl text-sm">infraestrutura</span>
+                        <span
+                            class="flex justify-center items-center p-3 h-5 custom-bg-color-1 text-black font-bold rounded-xl text-sm">tecnologia</span>
+                        <span
+                            class="flex justify-center items-center p-3 h-5 custom-bg-color-1 text-black font-bold rounded-xl text-sm">design
+                            e ux</span>
+                        <span
+                            class="flex justify-center items-center p-3 h-5 custom-bg-color-1 text-black font-bold rounded-xl text-sm">infraestrutura</span>
+                        <span
+                            class="flex justify-center items-center p-3 h-5 custom-bg-color-1 text-black font-bold rounded-xl text-sm">gestão</span>
+                        <span
+                            class="flex justify-center items-center p-3 h-5 custom-bg-color-1 text-black font-bold rounded-xl text-sm">negócios</span>
+                        <span
+                            class="flex justify-center items-center p-3 h-5 custom-bg-color-1 text-black font-bold rounded-xl text-sm">infraestrutura</span>
+                        <span
+                            class="flex justify-center items-center p-3 h-5 custom-bg-color-1 text-black font-bold rounded-xl text-sm">startups</span>
+                        <span
+                            class="flex justify-center items-center p-3 h-5 custom-bg-color-1 text-black font-bold rounded-xl text-sm">financeiro</span>
+                        <span
+                            class="flex justify-center items-center p-3 h-5 custom-bg-color-1 text-black font-bold rounded-xl text-sm">tecnologia</span>
+                        <span
+                            class="flex justify-center items-center p-3 h-5 custom-bg-color-1 text-black font-bold rounded-xl text-sm">design
+                            e ux</span>
+                        <span
+                            class="flex justify-center items-center p-3 h-5 custom-bg-color-1 text-black font-bold rounded-xl text-sm">gestão</span>
+                        <span
+                            class="flex justify-center items-center p-3 h-5 custom-bg-color-1 text-black font-bold rounded-xl text-sm">negócios</span>
+                        <span
+                            class="flex justify-center items-center p-3 h-5 custom-bg-color-1 text-black font-bold rounded-xl text-sm">startups</span>
+                        <span
+                            class="flex justify-center items-center p-3 h-5 custom-bg-color-1 text-black font-bold rounded-xl text-sm">financeiro</span>
+                    </div>
+                    <div class="flex flex-col lg:flex-row w-full lg:justify-between my-10">
+                        <div class="flex items-center justify-center">
+                            <figure class="mr-3"><img src="img/cifrao-icon.svg" alt="dolar-icon"></figure>
+                            <span class="text-3xl font-bold">R$ 800,00</span>
+                            <span class="text-sm md:text-base pt-2 font-bold">/mês</span>
+                        </div>
+                        <div class="flex justify-center lg:my-0 my-5">
+                            <button type="button"
+                                class="bg-blue-600 text-white font-bold rounded-lg px-10 h-10 md:h-12 hover:bg-blue-700 focus:ring focus:ring-blue-500">Ver
+                                perfil completo</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="flex flex-col lg:flex-row lg:gap-8 border border-slate-300 rounded-lg px-10 mt-10">
+                <div class="flex w-full lg:w-1/5 h-full justify-center">
+                    <figure class="mt-10"><img src="img/johnPS.png" alt="mentor-img"></figure>
+                </div>
+                <div class="w-full lg:w-4/5 h-full mt-10">
+                    <div class="flex items-center justify-center lg:justify-start gap-2">
+                        <h1 class="text-2xl font-bold text-slate-900">John P. Santos</h1>
+                        <figure><img src="img/checked-icon.svg" alt="icon-verified"></figure>
+                    </div>
+                    <h2 class="flex justify-center lg:justify-start font-semibold custom-color-1 my-2">Cientista de
+                        Dados Sênior na Amazon</h2>
+                    <figure class="flex justify-center lg:justify-start"><img src="img/stars.svg" alt="stars-icon">
+                    </figure>
+                    <div class="mt-6 text-xl custom-color-1">
+                        <p class="text-justify text-sm md:text-xl">
+                            Sou John P. Santos, cientista de dados sênior na Amazon com mais de oito anos de experiência
+                            em machine learning e análise preditiva.
+                            Ao longo da minha trajetória, tenho me dedicado a transformar dados em estratégias que
+                            impactam diretamente a experiência dos clientes
+                            e os resultados da empresa. Com mestrado em Ciência da Computação e especialização em IA,
+                            meu foco é sempre resolver problemas complexos
+                            de forma criativa e eficiente. Tenho orgulho de liderar e orientar equipes talentosas,
+                            cultivando um ambiente de inovação e precisão analítica
+                            em todos os projetos em que atuo.
+                        </p>
+                    </div>
+                    <div class="flex flex-wrap gap-1 items-center justify-between my-6">
+                        <span
+                            class="flex justify-center items-center p-3 h-5 custom-bg-color-1 text-black font-bold rounded-xl text-sm">infraestrutura</span>
+                        <span
+                            class="flex justify-center items-center p-3 h-5 custom-bg-color-1 text-black font-bold rounded-xl text-sm">tecnologia</span>
+                        <span
+                            class="flex justify-center items-center p-3 h-5 custom-bg-color-1 text-black font-bold rounded-xl text-sm">design
+                            e ux</span>
+                        <span
+                            class="flex justify-center items-center p-3 h-5 custom-bg-color-1 text-black font-bold rounded-xl text-sm">infraestrutura</span>
+                        <span
+                            class="flex justify-center items-center p-3 h-5 custom-bg-color-1 text-black font-bold rounded-xl text-sm">gestão</span>
+                        <span
+                            class="flex justify-center items-center p-3 h-5 custom-bg-color-1 text-black font-bold rounded-xl text-sm">negócios</span>
+                        <span
+                            class="flex justify-center items-center p-3 h-5 custom-bg-color-1 text-black font-bold rounded-xl text-sm">infraestrutura</span>
+                        <span
+                            class="flex justify-center items-center p-3 h-5 custom-bg-color-1 text-black font-bold rounded-xl text-sm">startups</span>
+                        <span
+                            class="flex justify-center items-center p-3 h-5 custom-bg-color-1 text-black font-bold rounded-xl text-sm">financeiro</span>
+                        <span
+                            class="flex justify-center items-center p-3 h-5 custom-bg-color-1 text-black font-bold rounded-xl text-sm">tecnologia</span>
+                        <span
+                            class="flex justify-center items-center p-3 h-5 custom-bg-color-1 text-black font-bold rounded-xl text-sm">design
+                            e ux</span>
+                        <span
+                            class="flex justify-center items-center p-3 h-5 custom-bg-color-1 text-black font-bold rounded-xl text-sm">gestão</span>
+                        <span
+                            class="flex justify-center items-center p-3 h-5 custom-bg-color-1 text-black font-bold rounded-xl text-sm">negócios</span>
+                        <span
+                            class="flex justify-center items-center p-3 h-5 custom-bg-color-1 text-black font-bold rounded-xl text-sm">startups</span>
+                        <span
+                            class="flex justify-center items-center p-3 h-5 custom-bg-color-1 text-black font-bold rounded-xl text-sm">financeiro</span>
+                    </div>
+                    <div class="flex flex-col lg:flex-row w-full lg:justify-between my-10">
+                        <div class="flex items-center justify-center">
+                            <figure class="mr-3"><img src="img/cifrao-icon.svg" alt="dolar-icon"></figure>
+                            <span class="text-3xl font-bold">R$ 800,00</span>
+                            <span class="text-sm md:text-base pt-2 font-bold">/mês</span>
+                        </div>
+                        <div class="flex justify-center lg:my-0 my-5">
+                            <button type="button"
+                                class="bg-blue-600 text-white font-bold rounded-lg px-10 h-10 md:h-12 hover:bg-blue-700 focus:ring focus:ring-blue-500">Ver
+                                perfil completo</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <section class="w-full bg-slate-900 text-white py-14">
+        <div class="container mx-auto flex flex-col justify-center items-center gap-10">
+            <h4 class="md:text-3xl font-bold">Que tal monetizar sua experiência?</h4>
+            <h3 class="text-xl md:text-4xl font-bold">Torne-se um mentorr especializado</h3>
+            <div class="flex flex-col md:flex-row gap-6">
+                <button class="bg-blue-600 px-12 font-bold py-4 rounded-lg hover:bg-blue-700">Quero ser Mentorr</button>
+                <button class="font-bold border border-blue-600 px-12 py-4 rounded-lg hover:bg-blue-600">Quero ser
+                    aluno</button>
+            </div>
+            <p class="text-slate-300">Não é necessário cartão de crédito.</p>
+        </div>
+    </section>
+    <footer class="bg-slate-950 text-white">
+        <div
+            class="container mx-auto flex flex-col items-center gap-12 lg:gap-0 lg:items-start md:flex-row md:px-6 py-14 justify-between">
+            <div class="flex items-center">
+                <figure>
+                    <img src="img/logo-white.svg" alt="Logo Mentorr">
+                </figure>
+            </div>
+            <div class="md:flex-row">
+                <h5 class="text-blue-600 font-bold text-md mb-4">Institucional</h5>
+                <ul class="text-slate-300 text-md flex flex-col gap-4">
+                    <li>
+                        <a href="/">Como funciona</a>
+                    </li>
+                    <li>
+                        <a href="/">Quem Somos</a>
+                    </li>
+                    <li>
+                        <a href="/">Investidores</a>
+                    </li>
+                    <li>
+                        <a href="/">Código de ética</a>
+                    </li>
+                </ul>
+            </div>
+
+            <div>
+                <h5 class="text-blue-600 font-bold text-md mb-4">Institucional</h5>
+                <ul class="text-slate-300 text-md flex flex-col gap-4">
+                    <li>
+                        <a href="/">Como funciona</a>
+                    </li>
+                    <li>
+                        <a href="/">Quem Somos</a>
+                    </li>
+                    <li>
+                        <a href="/">Investidores</a>
+                    </li>
+                    <li>
+                        <a href="/">Código de ética</a>
+                    </li>
+                </ul>
+            </div>
+
+            <div>
+                <h5 class="text-blue-600 font-bold text-md mb-4">Institucional</h5>
+                <ul class="text-slate-300 text-md flex flex-col gap-4">
+                    <li>
+                        <a href="/">Como funciona</a>
+                    </li>
+                    <li>
+                        <a href="/">Quem Somos</a>
+                    </li>
+                    <li>
+                        <a href="/">Investidores</a>
+                    </li>
+                    <li>
+                        <a href="/">Código de ética</a>
+                    </li>
+                </ul>
+            </div>
+
+            <div>
+                <h5 class="text-blue-600 font-bold text-md mb-4">Institucional</h5>
+                <ul class="text-slate-300 text-md flex flex-col gap-4">
+                    <li>
+                        <a href="/">Como funciona</a>
+                    </li>
+                    <li>
+                        <a href="/">Quem Somos</a>
+                    </li>
+                    <li>
+                        <a href="/">Investidores</a>
+                    </li>
+                    <li>
+                        <a href="/">Código de ética</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+
+</body>
+
+</html>
